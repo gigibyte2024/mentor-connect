@@ -1,0 +1,157 @@
+body {
+    background-color: #000;
+    color: #eaeaea;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .app {
+    text-align: center;
+  }
+  
+  /* ---------- HEADER ---------- */
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00ff88;
+  }
+  
+  .header h1 span {
+    color: #fff;
+  }
+  
+  .header p {
+    color: #888;
+    margin-bottom: 2rem;
+  }
+  
+  /* ---------- AUTH CARD ---------- */
+  .auth-card {
+    background-color: #0d0d0d;
+    padding: 2rem;
+    border-radius: 16px;
+    width: 370px;
+    text-align: left;
+  
+    /* Subtle neon green glow (steady, no animation) */
+    border: 1px solid rgba(0, 255, 136, 0.5);
+    box-shadow:
+      0 0 15px rgba(0, 255, 136, 0.35),
+      0 0 40px rgba(0, 255, 136, 0.25);
+  
+    transition: all 0.3s ease;
+  }
+  
+  /* ---------- TABS ---------- */
+  .tab-buttons {
+    display: flex;
+    background: #1a1a1a;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-buttons button {
+    flex: 1;
+    padding: 0.8rem 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #888;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-buttons button.active {
+    background-color: #00ff88;
+    color: #000;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
+  }
+  
+  /* ---------- FORM ELEMENTS ---------- */
+  label {
+    font-size: 0.9rem;
+    color: #cfcfcf;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #00ff88;
+    border-radius: 6px;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  input:focus {
+    border-color: #00ffaa;
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
+  }
+  
+  /* ---------- BUTTON ---------- */
+  button[type="submit"] {
+    width: 100%;
+    background-color: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00ffaa;
+    box-shadow:
+      0 0 12px rgba(0, 255, 136, 0.7),
+      0 0 25px rgba(0, 255, 136, 0.4);
+    transform: scale(1.02);
+  }
+  
+  /* ---------- TEXT LINKS ---------- */
+  .link-text,
+  .toggle-msg {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  
+  a,
+  .toggle-button {
+    color: #00ff88;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  a:hover,
+  .toggle-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* ---------- MESSAGE ---------- */
+  .message {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #00ff88;
+  }
+  
