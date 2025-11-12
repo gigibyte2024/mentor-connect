@@ -3,23 +3,22 @@ const { PrismaClient } = require('@prisma/client');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const verifyToken = require('./verifyToken');
-const cors = require('cors');          // ✅ Added here
+const cors = require('cors');         
 require('dotenv').config();
 
 const app = express();
 const prisma = new PrismaClient();
 const port = 3000;
 
-// ✅ Middlewares
-app.use(cors());                       // ✅ Enables requests from frontend
+
+app.use(cors());                     
 app.use(express.json());
 
-// ✅ Test route
+
 app.get('/', (req, res) => {
   res.send('Hello World! Backend is running 🚀');
 });
 
-// ✅ Signup route
 app.post('/signup', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -49,7 +48,6 @@ app.post('/signup', async (req, res) => {
   }
 });
 
-// ✅ Login route
 app.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -85,7 +83,6 @@ app.post('/login', async (req, res) => {
   }
 });
 
-// ✅ Protected route example
 app.get('/protected', verifyToken, (req, res) => {
   res.json({
     message: 'Access granted to protected route!',
@@ -93,7 +90,6 @@ app.get('/protected', verifyToken, (req, res) => {
   });
 });
 
-// ✅ Start server
 app.listen(port, () => {
   console.log(`🚀 Express app running at http://localhost:${port}`);
 });

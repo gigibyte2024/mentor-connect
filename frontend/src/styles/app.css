@@ -14,7 +14,7 @@ body {
     text-align: center;
   }
   
-  /* ---------- HEADER ---------- */
+
   .header h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -30,7 +30,7 @@ body {
     margin-bottom: 2rem;
   }
   
-  /* ---------- AUTH CARD ---------- */
+
   .auth-card {
     background-color: #0d0d0d;
     padding: 2rem;
@@ -38,7 +38,7 @@ body {
     width: 370px;
     text-align: left;
   
-    /* Subtle neon green glow (steady, no animation) */
+
     border: 1px solid rgba(0, 255, 136, 0.5);
     box-shadow:
       0 0 15px rgba(0, 255, 136, 0.35),
@@ -47,7 +47,7 @@ body {
     transition: all 0.3s ease;
   }
   
-  /* ---------- TABS ---------- */
+
   .tab-buttons {
     display: flex;
     background: #1a1a1a;
@@ -72,8 +72,7 @@ body {
     border-radius: 6px;
     box-shadow: 0 0 8px rgba(0, 255, 136, 0.6);
   }
-  
-  /* ---------- FORM ELEMENTS ---------- */
+
   label {
     font-size: 0.9rem;
     color: #cfcfcf;
@@ -98,7 +97,7 @@ body {
     box-shadow: 0 0 12px rgba(0, 255, 136, 0.5);
   }
   
-  /* ---------- BUTTON ---------- */
+
   button[type="submit"] {
     width: 100%;
     background-color: #00ff88;
@@ -120,7 +119,7 @@ body {
     transform: scale(1.02);
   }
   
-  /* ---------- TEXT LINKS ---------- */
+
   .link-text,
   .toggle-msg {
     text-align: center;
@@ -142,7 +141,7 @@ body {
     text-decoration: underline;
   }
   
-  /* ---------- MESSAGE ---------- */
+
   .message {
     text-align: center;
     margin-top: 1rem;
